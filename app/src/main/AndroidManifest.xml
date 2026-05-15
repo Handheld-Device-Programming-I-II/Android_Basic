@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Android_Basic">
         <activity android:name=".activity.MainActivity">
         <intent-filter>
-
+            <action android:name="android.intent.action.MAIN"/>
         </intent-filter>
 
         </activity>
