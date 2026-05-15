@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Basic">
         <activity android:name=".activity.MainActivity">
+        <intent-filter>
+
+        </intent-filter>
 
         </activity>
 
