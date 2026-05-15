@@ -1,5 +1,7 @@
 package lk.jiat.android_basic.activity;
 
-public class MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
 
 }
