@@ -23,21 +23,24 @@ public class MainActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(MainActivity.this,
-                        R.string.testing_message,
-                        Toast.LENGTH_LONG).show();*/
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("Confirmation Message")
-                        .setMessage(R.string.testing_message)
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
 
-                            }
-                        })
-                        .setNegativeButton("NO", null)
-                        .show();
             }
         });
+    }
+    private void showMessage(){
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("Confirmation Message")
+                .setMessage(R.string.testing_message)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this,
+                                R.string.testing_message,
+                                Toast.LENGTH_LONG).show();
+                    }
+                })
+                .setNegativeButton("NO", null)
+                .show();
+
     }
 }
