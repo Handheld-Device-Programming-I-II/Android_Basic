@@ -1,5 +1,6 @@
 package lk.jiat.android_basic.activity;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
@@ -21,9 +22,12 @@ public class MainActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,
+                /*Toast.makeText(MainActivity.this,
                         R.string.testing_message,
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_LONG).show();*/
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Confirmation Message")
+                        .setMessage(R.string)
             }
         });
     }
