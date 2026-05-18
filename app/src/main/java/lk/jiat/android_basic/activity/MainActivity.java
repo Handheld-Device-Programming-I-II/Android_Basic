@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
 
         Button submitBtn = findViewById(R.id.submitBtn);
         submitBtn.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +49,5 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("NO", null)
                 .show();
-
     }
 }
