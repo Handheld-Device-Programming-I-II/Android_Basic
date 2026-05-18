@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,
-                        R.string.testing_messa)
+                        R.string.testing_message,
+                        Toast.LENGTH_LONG).show();
             }
         });
     }
