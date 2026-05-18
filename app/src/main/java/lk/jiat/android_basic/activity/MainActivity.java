@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();*/
                 new AlertDialog.Builder(MainActivity.this)
                         .setTitle("Confirmation Message")
-                        .setMessage(R.string)
+                        .setMessage(R.string.testing_message)
+
             }
         });
     }
