@@ -1,6 +1,7 @@
 package lk.jiat.android_basic.activity;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
@@ -28,7 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 new AlertDialog.Builder(MainActivity.this)
                         .setTitle("Confirmation Message")
                         .setMessage(R.string.testing_message)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
 
+                            }
+                        })
+                        .setNegativeButton("NO", null)
+                        .show();
             }
         });
     }
